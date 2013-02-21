@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="はじめてのHTMLです。">
+  <title>はじめてのHTML!</title>
+</head>
+<body>
+  <h1>お問い合わせフォーム</h1>
+  <form action="contact.php" method="post">
+    <p>お名前：<input type="text" name="name" size="20" maxlength="5" value="たなか"></p>
+    <P>
+      <input type="checkbox" name="mobile" value="1" checked> iPhone
+      <input type="checkbox" name="mobile" value="2" > Android
+      <input type="checkbox" name="mobile" value="3" > その他
+    </p>
+    <P>
+      <input type="radio" name="sex" value="1" checked> 男性
+      <input type="radio" name="sex" value="2" > 女性
+      <input type="radio" name="sex" value="3" > その他
+    </p>
+    <p>
+      <select name="language" size="4" multiple>
+	<option value="ja">日本語</option>
+	<option value="en">英語</option>
+	<option value="fr">フランス語</option>
+	<option value="sp">スペイン語</option>
+	<option value="th">タイ語</option>
+	<option value="kr">韓国語</option>
+      </select>
+    </p>
+    <p><input type="submit" value="送信"></p>
+  </form>
+</body>
+</html>
